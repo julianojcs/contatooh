@@ -1,4 +1,4 @@
-# contatooh
+# CONTATOOH
 
 # To install run:
 
