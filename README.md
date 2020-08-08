@@ -2,4 +2,4 @@
 
 # To install run:
 
-npm install
+> npm install
