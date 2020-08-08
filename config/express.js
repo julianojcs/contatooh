@@ -1,7 +1,7 @@
 // config/express.js
 
 var express = require('express');
-var home = require('../app/routes/home' );
+//var home = require('../app/routes/home' );
 var load = require('express-load');
 var bodyParser = require('body-parser' );
 
