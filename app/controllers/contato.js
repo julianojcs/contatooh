@@ -17,7 +17,9 @@ module.exports = function() {
     };
 
     controller.salvaContato = function(req, res) {
-        var contato = req.body;
+        var contato = req.body; // req.body -> Variáveis do formulário usando o método POST. (equivale ao $_POST do PHP)
+                                // req.query -> Variáveis da URL usando método GET(equivale ao $_GET do PHP)
+                                // req.params -> Variáveis das rotas da URL (ex: localhost/contatooh/contato/1) -> param = 1 
         contato = contato._id ? atualiza(contato) : adiciona(contato);
         res.json(contato); 
     };
