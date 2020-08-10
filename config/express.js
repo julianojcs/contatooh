@@ -8,7 +8,7 @@ var bodyParser = require('body-parser' );
 module.exports = function() {
     var app = express();
     // configuração de ambiente 
-    app.set('port' , 3000);
+    app.set('port' , 80);
     
     // middleware 
     app.use(express.static('./public' ));
