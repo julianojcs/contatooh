@@ -1,9 +1,11 @@
 // public/js/controllers/ContatoController.js 
 
-angular.module('contatooh' ).controller('ContatoController' , function($scope, $resource, $routeParams) {
+angular.module('contatooh').controller('ContatoController' , function($scope, $routeParams, Contato) {
     console.log($routeParams.contatoId);
 
-    var Contato = $resource('/contatos/:id');
+    // Apaga a linha que constroi o resource, pois o serviço ContatoService.js passará a retornar 
+    // uma instância de $resource já configurada e pronta para uso
+    //var Contato = $resource('/contatos/:id');
 
     if($routeParams.contatoId) {
         Contato.get({id: $routeParams.contatoId}, 
