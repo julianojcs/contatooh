@@ -1,5 +1,4 @@
 // app/models/contato.js
-
 var mongoose = require('mongoose');
 
 module.exports = function() {
